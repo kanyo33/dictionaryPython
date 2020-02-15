@@ -21,8 +21,9 @@ def translate(w):
 word = input("Enter word: ")
 output = translate(word)
 if type(output) == list:
-    for item in output:
-        print(item)
+    for index, item in enumerate(output):
+        print(f"{index+1}. {item}")
+
 else:
     print(output)
 
